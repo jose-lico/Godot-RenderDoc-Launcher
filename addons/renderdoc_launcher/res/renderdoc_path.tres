@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource( 1 )
-x11_path = "/home/jose/Downloads/renderdoc_1.26/bin/qrenderdoc"
+x11_path = ""
 win_path = ""
 osx_path = ""
