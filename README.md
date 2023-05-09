@@ -1,6 +1,6 @@
 # GodotRenderDocLauncher
 
-This plugin tool adds a button to Godot's editor allowing you to easily launch RenderDoc so you can quickly see how your changes are affecting the game's rendering.
+This plugin tool adds a button to Godot's editor allowing you to easily launch [RenderDoc](https://renderdoc.org/) so you can quickly see how your changes are affecting the game's rendering.
 
 <p align="center">
 <img src="addons/renderdoc_launcher/res/renderdoc_logo.png" alt= "RenderDocLogo" width="64">
