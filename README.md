@@ -33,5 +33,6 @@ After you provide RenderDoc's location, it will be launched and the game will au
 <img src="addons/renderdoc_launcher/.github/RenderDocLauncherExample.png" alt="RenderDocLauncherExample" width="75%">
 </p>
 
-###
+---
 
+Hope this small tool can make your life easier when optimzing and iterating :)
