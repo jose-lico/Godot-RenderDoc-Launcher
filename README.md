@@ -35,4 +35,4 @@ After you provide RenderDoc's location, it will be launched and the game will au
 
 ---
 
-Hope this small tool can make your life easier when optimzing and iterating :)
+Hope this small tool can make your life easier when optimizing and iterating :)
