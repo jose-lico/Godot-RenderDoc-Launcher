@@ -4,8 +4,23 @@ This plugin tool adds a button to Godot's editor allowing you to easily launch [
 
 <p align="center">
 <img src="addons/renderdoc_launcher/res/renderdoc_logo.png" alt= "RenderDocLogo" width="64">
-<img src="icon.png" alt= "RenderDocLogo" width="">
+<img src="icon.png" alt= "Godot" width="">
 </p>
+
+## Intro
+When developing a game it is always important to be mindful of its performance. This can be measured in a few areas, namely rendering.
+
+Especially when working with an engine like Godot or Unity, one might not be fully aware of the impact of actions such as adding that extra Node or GameObject, changing up the SceneTree or Hierarchy in a certain way, etc.
+
+How do these actions translate to the engine’s renderer and ultimately, API calls?
+
+<p align="center">
+<img src="addons/renderdoc_launcher/res/renderdoc_logo.png" alt= "RenderDocLogo" >
+</p>
+
+[RenderDoc](https://renderdoc.org/) is a tool which can help us with that.
+
+Not only can it help us identify bottlenecks in our scene, it can also serve as debugger to check the state of pipeline when looking for what went wrong drawing that piece of custom geometry.
 
 ## Motivation
 
