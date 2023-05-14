@@ -48,6 +48,9 @@ After you provide RenderDoc's location, it will be launched and the game will au
 <img src=".github/RenderDocLauncherExample.png" alt="RenderDocLauncherExample" width="75%">
 </p>
 
+**Notes:**  If you work/test your game on multiple OS's it should work fine as the plugin stores a location for each OS.
+If you find yourself working with other people, it might be a good idea to add `addons/renderdoc_launcher/res/renderdoc_path.tres` to your .gitignore so you dont overwrite each others RenderDoc locations.
+
 ---
 
 Hope this small tool can make your life easier when optimizing and iterating :)
