@@ -11,7 +11,7 @@ This plugin tool adds a button to Godot's editor allowing you to easily launch [
 
 I created this plugin to simplify my workflow when using RenderDoc.
 
-Previously, I had to export my game and adjust RenderDoc's settings each time I made a change, which was tedious. I later discovered that I could directly launch Godot with the command-line argument "--path <path_to_your_project>" instead of launching the game's executable, which made things easier. 
+Previously, I had to export my game and adjust RenderDoc's settings each time I made a change, which was tedious. I later discovered that I could directly launch a Godot project with the command-line argument "--path <path_to_your_project>" instead of having to export the game's executable, which made things easier. 
 
 However, I still wanted quicker access to RenderDoc without having to navigate through multiple menus or search for file paths.
 
@@ -21,7 +21,7 @@ However, I still wanted quicker access to RenderDoc without having to navigate t
 <img src="addons/renderdoc_launcher/.github/RenderDocLauncherButton.png" alt= "RenderDocLauncherButton" width="75%">
 </p>
 
-The first time you click the button you will be prompted to provide RenderDoc's location. This will be save in a resource file.
+The first time you click the button you will be prompted to provide RenderDoc's location. This will be saved in a resource file.
 
 <p align="center">
 <img src="addons/renderdoc_launcher/.github/RenderDocLauncherLocation.png" alt="RenderDocLauncherLocation" width="75%">
