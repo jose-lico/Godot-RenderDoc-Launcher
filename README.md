@@ -18,19 +18,19 @@ However, I still wanted quicker access to RenderDoc without having to navigate t
 ## Walkthrough
 
 <p align="center">
-<img src="addons/renderdoc_launcher/.github/RenderDocLauncherButton.png" alt= "RenderDocLauncherButton" width="75%">
+<img src=".github/RenderDocLauncherButton.png" alt= "RenderDocLauncherButton" width="75%">
 </p>
 
 The first time you click the button you will be prompted to provide RenderDoc's location. This will be saved in a resource file.
 
 <p align="center">
-<img src="addons/renderdoc_launcher/.github/RenderDocLauncherLocation.png" alt="RenderDocLauncherLocation" width="75%">
+<img src=".github/RenderDocLauncherLocation.png" alt="RenderDocLauncherLocation" width="75%">
 </p>
 
 After you provide RenderDoc's location, it will be launched and the game will automatically start. This and other launch settings can be found at addons/renderdoc_launcher/res/settings.cap.
 
 <p align="center">
-<img src="addons/renderdoc_launcher/.github/RenderDocLauncherExample.png" alt="RenderDocLauncherExample" width="75%">
+<img src=".github/RenderDocLauncherExample.png" alt="RenderDocLauncherExample" width="75%">
 </p>
 
 ---
