@@ -60,7 +60,7 @@ func execute_renderdoc():
 	var text = file.get_as_text()
 	var data = parse_json(text)
 	
-	data["settings"]["commandLine"] = "--path %s" % [ProjectSettings.globalize_path("res://")]
+	data["settings"]["commandLine"] = '--path "%s"' % ProjectSettings.globalize_path("res://")
 	data["settings"]["executable"] = OS.get_executable_path()
 
 	file.close()

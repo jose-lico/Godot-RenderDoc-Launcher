@@ -3,28 +3,28 @@
 [ext_resource path="res://addons/renderdoc_launcher/res/renderdoc_logo.png" type="Texture" id=1]
 
 [node name="Control" type="Control"]
-margin_right = 24.0
+margin_right = 30.0
 margin_bottom = 24.0
-rect_min_size = Vector2( 24, 24 )
+rect_min_size = Vector2( 30, 24 )
 
 [node name="RenderDocButton" type="TextureButton" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -12.0
 margin_right = 24.0
-margin_bottom = 24.0
+margin_bottom = 12.0
 rect_min_size = Vector2( 24, 24 )
 texture_normal = ExtResource( 1 )
 expand = true
+stretch_mode = 4
 
 [node name="FileDialog" type="FileDialog" parent="."]
 visible = true
-anchor_left = 0.5
 anchor_top = 0.5
-anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -388.0
-margin_top = -269.0
-margin_right = 388.0
-margin_bottom = 269.0
-rect_min_size = Vector2( 100, 70 )
+margin_top = -345.0
+margin_right = 316.0
+margin_bottom = -196.0
 window_title = "Open a File"
 resizable = true
 mode = 0
