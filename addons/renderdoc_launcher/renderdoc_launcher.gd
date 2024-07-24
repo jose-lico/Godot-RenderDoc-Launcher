@@ -81,6 +81,7 @@ func execute_renderdoc():
 	file.close()
 	
 	yield(get_tree(), "idle_frame")
+	print("Launching RenderDoc.")
 	OS.execute(get_renderdoc_path(), ["addons/renderdoc_launcher/res/settings.cap"], false)
 
 func save_path(path):
