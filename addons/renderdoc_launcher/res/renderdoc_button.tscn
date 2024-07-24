@@ -25,6 +25,7 @@ anchor_bottom = 0.5
 margin_top = -345.0
 margin_right = 316.0
 margin_bottom = -196.0
+rect_min_size = Vector2( 720, 720 )
 window_title = "Open a File"
 resizable = true
 mode = 0
