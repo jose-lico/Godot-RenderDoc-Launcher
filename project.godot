@@ -12,7 +12,7 @@ config_version=5
 
 config/name="GodotRenderDocLauncher"
 run/main_scene="res://Example.tscn"
-config/features=PackedStringArray("4.2", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [editor_plugins]
