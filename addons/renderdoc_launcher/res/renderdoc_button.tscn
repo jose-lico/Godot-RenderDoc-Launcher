@@ -3,29 +3,46 @@
 [ext_resource type="Texture2D" uid="uid://1qp4s87d4dpp" path="res://addons/renderdoc_launcher/res/renderdoc_logo.png" id="1_ieckf"]
 
 [node name="Control" type="Control"]
-custom_minimum_size = Vector2(30, 24)
+custom_minimum_size = Vector2(120, 40)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -1122.0
-offset_bottom = -624.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="RenderDocButton" type="TextureButton" parent="."]
-custom_minimum_size = Vector2(24, 24)
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 120.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
 layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -12.0
-offset_right = 24.0
-offset_bottom = 12.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
 grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/HBoxContainer"]
+custom_minimum_size = Vector2(4, 0)
+layout_mode = 2
+
+[node name="RenderDocButton" type="TextureButton" parent="Panel/HBoxContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
 texture_normal = ExtResource("1_ieckf")
 ignore_texture_size = true
-stretch_mode = 0
+stretch_mode = 4
+
+[node name="OptionButton" type="OptionButton" parent="Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+tooltip_text = "Choose which scene RenderDoc should launch with"
+toggle_mode = false
+flat = true
 
 [node name="FileDialog" type="FileDialog" parent="."]
 title = "Open a File"
