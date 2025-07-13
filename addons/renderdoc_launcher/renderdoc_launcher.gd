@@ -9,6 +9,7 @@ var thread: Thread
 var renderdoc_path: RenderDocPath
 var button: Control
 var file_dialog: FileDialog
+var option_button: OptionButton
 
 var added: bool = false;
 
@@ -16,16 +17,21 @@ func _enter_tree():
 	if create_renderdoc_path_tres() != OK:
 		printerr("Failed to create renderdoc_path.tres.")
 		return
-	
+
 	button = button_res.instantiate()
-	add_control_to_container(EditorPlugin.CONTAINER_TOOLBAR, button);
+	add_control_to_container(EditorPlugin.CONTAINER_TOOLBAR, button)
 	
-	button.get_node("RenderDocButton").pressed.connect(open_renderdoc)
-	
+	var container = button.get_node("Panel/HBoxContainer")
+	container.get_node("RenderDocButton").pressed.connect(open_renderdoc)
+
+	option_button = container.get_node("OptionButton")
+	option_button.add_item("Main")
+	option_button.add_item("Current")
+
 	file_dialog = button.get_node("FileDialog")
 	file_dialog.file_selected.connect(save_path)
 	file_dialog.title = "RenderDoc Location"
-	
+
 	added = true
 	print("Added RenderDoc Launcher Button to Toolbar.")
 
@@ -63,7 +69,18 @@ func execute_renderdoc():
 	var data
 	if error == OK:
 		data = json.data
-		data["settings"]["commandLine"] = '--path "%s"' % ProjectSettings.globalize_path("res://")
+		match option_button.get_selected_id():
+			0:
+				data["settings"]["commandLine"] = '--path "%s"' % ProjectSettings.globalize_path("res://")
+			1:
+				var current_scene = get_editor_interface().get_edited_scene_root()
+				if current_scene:
+					var scene_path = current_scene.scene_file_path
+					var abs_scene_path = ProjectSettings.globalize_path(scene_path)
+					var abs_project_path = ProjectSettings.globalize_path("res://")
+					data["settings"]["commandLine"] = '--path "%s" --scene "%s"' % [abs_project_path, abs_scene_path]
+			
+		
 		data["settings"]["executable"] = OS.get_executable_path()
 	else:
 		print(error)
