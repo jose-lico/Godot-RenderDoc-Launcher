@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GodotRenderDocLauncher"
-run/main_scene="res://Example.tscn"
+run/main_scene="res://scenes/Main.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 

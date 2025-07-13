@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://jvwe6dv0pi5k"]
+
+[ext_resource type="Texture2D" uid="uid://dwtw1um18net8" path="res://icon.svg" id="1_mvt8x"]
+
+[node name="SubScene" type="Node2D"]
+modulate = Color(1, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mvt8x")

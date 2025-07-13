@@ -27,13 +27,13 @@ Not only can it help us identify bottlenecks in our scene, it can also serve as 
 
 I created this plugin to simplify my workflow when using RenderDoc.
 
-Previously, I had to export my game and adjust RenderDoc's settings each time I made a change, which was tedious. I later discovered that I could directly launch a Godot project with the command-line argument `--path <path_to_your_project>` instead of having to export the game's executable, which made things easier. 
+Previously, I had to export my game and adjust RenderDoc's settings each time I made a change, which was tedious. I later discovered that I could directly launch a Godot project with the command-line argument `--path <path_to_your_project>` instead of having to export the game's executable, which made things easier.
 
 However, I still wanted quicker access to RenderDoc without having to navigate through multiple menus or search for file paths.
 
 ## Walkthrough
 
-On project startup a button is added to the toolbar. Click this button to launch RenderDoc.
+On project startup a button is added to the toolbar. Click it to launch RenderDoc. If you click on the dropdown, you can also select the scene RenderDoc will open on.
 
 <p align="center">
 <img src=".github/RenderDocLauncherButton.png" alt= "RenderDocLauncherButton" width="75%">
@@ -41,7 +41,7 @@ On project startup a button is added to the toolbar. Click this button to launch
 
 The first time you click the button you will be prompted to provide RenderDoc's location. This will be saved to a resource file so you do not need to do it again.
 
-*For Windows this would typically be* `C:\\Program Files\\RenderDoc\\qrenderdoc.exe` *if the installer was used.*
+_For Windows this would typically be_ `C:\\Program Files\\RenderDoc\\qrenderdoc.exe` _if the installer was used._
 
 <p align="center">
 <img src=".github/RenderDocLauncherLocation.png" alt="RenderDocLauncherLocation" width="75%">
@@ -55,11 +55,11 @@ These settings are copied into `addons/renderdoc_launcher/res/settings.cap` for 
 <img src=".github/RenderDocLauncherExample.png" alt="RenderDocLauncherExample" width="75%">
 </p>
 
-**Notes:**  `addons/renderdoc_launcher/res/renderdoc_path.tres` which is where the path to RenderDoc is saved is in the `.gitignore` of the addon.
+**Notes:** `addons/renderdoc_launcher/res/renderdoc_path.tres` which is where the path to RenderDoc is saved is in the `.gitignore` of the addon.
 This is the default because if you are working with other people on a project, your RenderDoc locations will differ. Same logic applies for the settings, but the default ones.
 
 If working on a project alone, feel free to remove the `.gitignore`, the path Resource even supports multiple OSs if you do test your project on multiple of them.
 
 ---
 
-Hope this small tool can make your life easier when optimizing and iterating :)
+Hope this small tool can make your life easier when optimizing and iterating 😃

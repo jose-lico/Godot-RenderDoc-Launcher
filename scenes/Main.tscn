@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://djodcf8aj4oo"]
+
+[ext_resource type="PackedScene" uid="uid://jvwe6dv0pi5k" path="res://scenes/SubScene.tscn" id="1_elqb8"]
+
+[node name="Example" type="Node2D"]
+
+[node name="SubScene" parent="." instance=ExtResource("1_elqb8")]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(687, 416)
+
+[node name="SubScene2" parent="." instance=ExtResource("1_elqb8")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(772, 135)
+
+[node name="SubScene3" parent="." instance=ExtResource("1_elqb8")]
+modulate = Color(1, 0.0941176, 0.843137, 1)
+position = Vector2(379, 233)
