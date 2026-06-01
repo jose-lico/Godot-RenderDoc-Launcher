@@ -71,14 +71,14 @@ func execute_renderdoc():
 		data = json.data
 		match option_button.get_selected_id():
 			0:
-				data["settings"]["commandLine"] = '--path "%s"' % ProjectSettings.globalize_path("res://")
+				data["settings"]["commandLine"] = '--verbose --path "%s"' % ProjectSettings.globalize_path("res://")
 			1:
 				var current_scene = get_editor_interface().get_edited_scene_root()
 				if current_scene:
 					var scene_path = current_scene.scene_file_path
 					var abs_scene_path = ProjectSettings.globalize_path(scene_path)
 					var abs_project_path = ProjectSettings.globalize_path("res://")
-					data["settings"]["commandLine"] = '--path "%s" --scene "%s"' % [abs_project_path, abs_scene_path]
+					data["settings"]["commandLine"] = '--verbose --path "%s" --scene "%s"' % [abs_project_path, abs_scene_path]
 			
 		
 		data["settings"]["executable"] = OS.get_executable_path()
