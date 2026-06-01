@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://ns1n5vbe3f5s"]
+
+[ext_resource type="Script" uid="uid://waebksjv13tn" path="res://post_process_shader.gd" id="1_lepbq"]
+
+[sub_resource type="Environment" id="Environment_du3rj"]
+
+[sub_resource type="CompositorEffect" id="CompositorEffect_k63wh"]
+resource_local_to_scene = false
+resource_name = ""
+enabled = true
+effect_callback_type = 4
+needs_motion_vectors = false
+needs_normal_roughness = false
+script = ExtResource("1_lepbq")
+metadata/_custom_type_script = "uid://waebksjv13tn"
+
+[sub_resource type="Compositor" id="Compositor_hl2e0"]
+compositor_effects = Array[CompositorEffect]([SubResource("CompositorEffect_k63wh")])
+
+[node name="DrawCommanDemo" type="Node3D" unique_id=1052055574]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1856688311]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1126838307]
+environment = SubResource("Environment_du3rj")
+compositor = SubResource("Compositor_hl2e0")
